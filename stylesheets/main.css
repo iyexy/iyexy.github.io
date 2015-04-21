@@ -43,23 +43,84 @@ h3,h4{	display:block; font-family:"Comic Sans MS",cursive;}
 	border-left:solid 2px grey;
 }
 aside.intro-skill-content{  
-	margin-left:30px;
+	
 	font-size:18px;
 	font-weight:bold;
 	display:block;
 	padding:110px 80px 80px;
 }
-.ballon{
-	float:right;
+#ballon-right{
 	right:20px;
+	float:right;
 	position:relative;
-    animation:myamination 15s;
-	animation-iteration-count:infinite;
 }
-@keyframes myamination
+#ballon-left{
+	width:150px;
+	height:200px;
+	margin-left:-600px;	
+	position:relative;
+}
+.ballon{
+    animation:ballonanimation 15s;
+	-moz-animation:ballonanimation 15s;		/* Firefox */
+	-webkit-animation:ballonanimation 15s;		/* Safari 和 Chrome */
+	-o-animation:ballonanimation 15s;		/* Opera */ 		
+	animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+	-o-animation-iteration-count:infinite;
+}
+@keyframes ballonanimation
 {
 0%	{left:0px; top:0px;}
-100%	{right:10px; top:-250px;}
+100%	{right:10px; top:-285px;} 	
+}
+@-moz-keyframes ballonanimation		/* Firefox */
+{
+0%	{left:0px; top:0px;}
+100%	{right:10px; top:-285px;}
+}
+@-webkit-keyframes ballonanimation		/* Safari 和 Chrome */
+{
+0%	{left:0px; top:0px;}
+100%	{right:10px; top:-285px;}
+}
+@-o-keyframes ballonanimation		/* Opera */ 
+{
+0%	{left:0px; top:0px;}
+100%	{right:10px; top:-285px;}
+}
+.cloud{
+	width:370px;
+	position:relative;
+    animation:cloudanimation 25s;
+	-moz-animation:cloudanimation 25s;		/* Firefox */
+	-webkit-animation:cloudanimation 25s;		/* Safari 和 Chrome */
+	-o-animation:cloudanimation 25s;		/* Opera */ 		
+	animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+	-o-animation-iteration-count:infinite;
+	}
+@keyframes cloudanimation
+{
+0%	{left:0px; top:0px;}
+100%	{left:280px; top:0px;}
+}
+@-moz-keyframes cloudanimation		/* Firefox */
+{
+0%	{left:0px; top:0px;}
+100%	{left:280px; top:0px;}
+}
+@-webkit-keyframes cloudanimation		/* Safari 和 Chrome */
+{
+0%	{left:0px; top:0px;}
+100%	{left:280px; top:0px;}
+}
+@-o-keyframes cloudanimation	/* Opera */ 
+{
+0%	{left:0px; top:0px;}
+100%	{left:280px; top:0px;}
 }
 div.line{
 	width:auto;
@@ -76,8 +137,8 @@ div.line{
 	position:absolute;
 }
 span.line-click{  display:none;}
-.line:hover span{  display:block;}
-.learnMore{	padding:20px 0px;}
+.line:hover span.line-click{  display:block;}
+.learnMore{  padding-bottom:20px;}
 .learnMore a img{
 	width:60px;
 	height:60px; 
@@ -89,3 +150,4 @@ h3 a:link{	color:#D5CF5F;}
 h3 a:visited{  color:black;}
 h3 a:hover{  text-decoration:none; color:#E9A631;}
 h3 a:active{  color:#2ECE6E;}
+
