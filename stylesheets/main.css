@@ -61,7 +61,7 @@ aside.intro-skill-content{
 	position:relative;
 }
 .ballon{
-    animation:ballonanimation 15s;
+        animation:ballonanimation 15s;
 	-moz-animation:ballonanimation 15s;		/* Firefox */
 	-webkit-animation:ballonanimation 15s;		/* Safari 和 Chrome */
 	-o-animation:ballonanimation 15s;		/* Opera */ 		
@@ -93,7 +93,7 @@ aside.intro-skill-content{
 .cloud{
 	width:370px;
 	position:relative;
-    animation:cloudanimation 25s;
+        animation:cloudanimation 25s;
 	-moz-animation:cloudanimation 25s;		/* Firefox */
 	-webkit-animation:cloudanimation 25s;		/* Safari 和 Chrome */
 	-o-animation:cloudanimation 25s;		/* Opera */ 		
