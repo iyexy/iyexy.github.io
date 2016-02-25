@@ -150,4 +150,5 @@ h3 a:link{	color:#D5CF5F;}
 h3 a:visited{  color:black;}
 h3 a:hover{  text-decoration:none; color:#E9A631;}
 h3 a:active{  color:#2ECE6E;}
+a { outline: none!important;}
 
