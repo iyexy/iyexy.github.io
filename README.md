@@ -1,3 +1,3 @@
 
 ###My Curriculum Vitae
-http://xiangyingye.github.io/cv/
+http://xyye.github.io/cv/
