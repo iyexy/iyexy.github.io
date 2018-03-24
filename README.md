@@ -1,4 +1,4 @@
-### [iyexy](http://yexy.me/)
+### [iyexy](http://iyexy.com/)
 :sunflower: About me page :honeybee:
 
 
